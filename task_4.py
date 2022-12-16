@@ -20,18 +20,18 @@
 my_lst = input("Введите слова через пробел: ").split()
 
 # Вариант 1
-n = 1
+ind = 1
 for elem in my_lst:
     if len(elem) > 10:
-        print(f"{n}. {elem[:10]}")
+        print(f"{ind}. {elem[:10]}")
     else:
-        print(f"{n}. {elem}")
-    n += 1
+        print(f"{ind}. {elem}")
+    ind += 1
 
 # Вариант 2
 print()
 # выведем пустую строку чтобы между результатами двух вариантов решения был визуальный разделитель
-for i, el in enumerate(my_lst, 1):
-    print(f'{i}. {el[:10]}')
+for ind, el in enumerate(my_lst, 1):
+    print(f'{ind}. {el[:10]}')
 
     
