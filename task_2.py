@@ -10,6 +10,7 @@ class DivisionByZero(Exception):
     def __init__(self, txt):
         self.txt = txt
 
+
 divisible = input('Введите делимое: ')
 divider = input('Введите делитель: ')
 
